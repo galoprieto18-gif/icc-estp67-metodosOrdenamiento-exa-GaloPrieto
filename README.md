@@ -10,6 +10,7 @@ Se tiene una estructura de datos con:
 - Cada `CarModel` contiene un arreglo de `CarYear` (Años).
 - Cada `CarYear` tiene un año (int) y un atributo booleano `isValid`.
 
+![alt text](image.png)
 
 ### Objetivo
 
@@ -172,36 +173,6 @@ No encontrada
 | **Tests Ejecutados Exitosamente**            | Los 3 tests en `BrandControllerTest` pasan sin errores                                                  | 2 pts  |
 | **Total**                                     |                                                                                                          | **10 puntos** |
 
-### Detalles de Evaluación
-
-#### 1. getTotalValidYears() (Evalua en Test)
-- ✅ **2 pts**: Método implementado correctamente, retorna el total de años válidos
-- ⚠️ **1 pt**: Método existe pero tiene errores de lógica
-- ❌ **0 pts**: Método no existe o no funciona
-
-#### 2. Método de Ordenamiento (Evalua en Test)
-- ✅ **2 pts**: Algoritmo correcto según fila, nombre exacto, ordena correctamente
-- ⚠️ **1 pt**: Algoritmo funciona pero nombre incorrecto o implementación parcial
-- ❌ **0 pts**: No implementado o algoritmo incorrecto
-
-#### 3. Búsqueda Binaria (Evalua en Test)
-- ✅ **2 pts**: Implementación correcta que funciona para ascendente y descendente
-- ⚠️ **1 pt**: Funciona solo para un tipo de orden o tiene errores menores
-- ❌ **0 pts**: No implementado o no funciona
-
-#### 4. Código y Nomenclaturas (1 pt)
-- ✅ **1 pt**: Código limpio, nombres correctos, buena estructura
-- ❌ **0 pts**: Nombres incorrectos o código desorganizado
-
-#### 5. Salida de Consola (1 pt)
-- ✅ **1 pt**: Salida completa copiada en la sección de resultados
-- ❌ **0 pts**: Sin salida o incompleta
-
-#### 6. Tests (6 pts)
-- ✅ **6 pts**: Los 3 tests pasan exitosamente
-- ⚠️ **4 pt**: 2 tests pasan
-- ⚠️ **2 pt**: 1 tests pasan
-- ❌ **0 pts**: Ningún test pasa
 
 
 ## ℹNota para estudiantes
