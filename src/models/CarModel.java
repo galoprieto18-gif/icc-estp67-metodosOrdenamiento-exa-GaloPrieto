@@ -4,34 +4,41 @@ import java.util.Arrays;
 
 public class CarModel {
 
-  private String modelName;
-  private CarYear[] years;
+  private String name;
+  private CarYear[] carYears;
 
   public CarModel() {
+
+  }
+  
+
+  public CarModel(String name, CarYear[] carYears) {
+    this.name = name;
+    this.carYears = carYears;
   }
 
-  public CarModel(String modelName, CarYear[] years) {
-    this.modelName = modelName;
-    this.years = years;
+
+  public String getName() {
+    return name;
   }
 
-  public String getModelName() {
-    return modelName;
+  public void setName(String name) {
+    this.name = name;
   }
 
-  public void setModelName(String modelName) {
-    this.modelName = modelName;
+  public CarYear[] getCarYears() {
+    return carYears;
   }
 
-  public CarYear[] getYears() {
-    return years;
+  public void setCarYears(CarYear[] carYears) {
+    this.carYears = carYears;
   }
 
-  public void setYears(CarYear[] years) {
-    this.years = years;
-  }
   @Override
   public String toString() {
-    return "CarModel [modelName=" + modelName + ", years=" + Arrays.toString(years) + "]";
-  }
-}
+    return "CarModel [name=" + name + ", carYears=" + Arrays.toString(carYears) + "]";
+
+    }
+    }
+
+  

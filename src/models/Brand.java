@@ -1,18 +1,17 @@
 package models;
 
-import java.util.Arrays;
 
 public class Brand {
 
   private String brandName;
-  private CarModel[] models;
+  private CarModel[] carModels;
 
   public Brand() {
   }
 
   public Brand(String brandName, CarModel[] models) {
     this.brandName = brandName;
-    this.models = models;
+    this.carModels = models;
   }
 
   public String getBrandName() {
@@ -24,28 +23,29 @@ public class Brand {
   }
 
   public CarModel[] getModels() {
-    return models;
+    return carModels;
   }
 
   public void setModels(CarModel[] models) {
-    this.models = models;
+    this.carModels = models;
   }
 
   public int getTotalVaildYears() {
     int totalValidYears = 0;
-    for (CarModel c : models) {
-      for (CarYear y : c.getYears())
-        if (y.isVaild() == true)
-          ;
-      totalValidYears++;
-
+    for (CarModel carModel : carModels) {
+      for (CarYear carYear : carModel.getCarYears()){
+        if (carYear.isVaild() ){
+          totalValidYears++;
+        }
     }
-    return totalValidYears;
+    
   }
+  return totalValidYears;
+}
 
   @Override
   public String toString() {
-    return "Brand [brandName=" + brandName + ", models=" + Arrays.toString(models) + "]";
+    return brandName + " -  Años válidos: " + getTotalVaildYears();
   }
 
 }
