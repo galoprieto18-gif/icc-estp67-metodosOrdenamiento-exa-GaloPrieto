@@ -16,16 +16,6 @@ public class CarModel {
     this.name = name;
     this.carYears = carYears;
   }
-
-
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
   public CarYear[] getCarYears() {
     return carYears;
   }
@@ -39,6 +29,6 @@ public class CarModel {
     return "CarModel [name=" + name + ", carYears=" + Arrays.toString(carYears) + "]";
 
     }
-    }
+}
 
   

@@ -22,11 +22,11 @@ public class Brand {
     this.brandName = brandName;
   }
 
-  public CarModel[] getModels() {
+  public CarModel[] getCarModels() {
     return carModels;
   }
 
-  public void setModels(CarModel[] carModels) {
+  public void setCarModels(CarModel[] carModels) {
     this.carModels = carModels;
   }
 
