@@ -9,9 +9,9 @@ public class Brand {
   public Brand() {
   }
 
-  public Brand(String brandName, CarModel[] models) {
+  public Brand(String brandName, CarModel[] carModels) {
     this.brandName = brandName;
-    this.carModels = models;
+    this.carModels = carModels;
   }
 
   public String getBrandName() {
@@ -26,8 +26,8 @@ public class Brand {
     return carModels;
   }
 
-  public void setModels(CarModel[] models) {
-    this.carModels = models;
+  public void setModels(CarModel[] carModels) {
+    this.carModels = carModels;
   }
 
   public int getTotalVaildYears() {
