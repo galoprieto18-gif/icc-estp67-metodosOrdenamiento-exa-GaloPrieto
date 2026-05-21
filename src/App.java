@@ -24,14 +24,14 @@ public class App {
         System.out.println("\nBuscar marca con 7 años válidos que se ordenaron de mayor a menor:");
         Brand respuesta = controller.binarySetachByValidYeras(car, 7, false);
         if (respuesta !=null){
-                System.out.println(respuesta);
+                System.out.println("Encontrada: Marca: " + respuesta.getBrandName() + " , ToTal de años validos:  " + respuesta.getTotalVaildYears());
         }else{
                 System.out.println("No encontrada");
         }
         System.out.println("\nBuscar marca con 4 años válidos que se ordenaron de mayor a menor:");
         Brand respuesta1 = controller.binarySetachByValidYeras(car, 4, false);
         if (respuesta1 !=null){
-                System.out.println(respuesta1);
+                System.out.println( "Encontrada: Marca: " + respuesta1.getBrandName() + ", ToTal de años validos: " + respuesta1.getTotalVaildYears());
         }else{
                 System.out.println("No encontrada");
         }
