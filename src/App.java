@@ -22,16 +22,16 @@ public class App {
                 System.out.println(brand);
         }
         System.out.println("\nBuscar marca con 7 años válidos que se ordenaron de mayor a menor:");
-        Brand respuesta = controller.binarySetachByValidYeras(car, 7, false);
-        if (respuesta !=null){
-                System.out.println("Encontrada: Marca: " + respuesta.getBrandName() + " , ToTal de años validos:  " + respuesta.getTotalVaildYears());
+        Brand resultado1 = controller.binarySetachByValidYeras(car, 7, false);
+        if (resultado1 !=null){
+                System.out.println("Encontrada: Marca: " + resultado1.getBrandName() + " , ToTal de años validos:  " + resultado1.getTotalVaildYears());
         }else{
                 System.out.println("No encontrada");
         }
         System.out.println("\nBuscar marca con 4 años válidos que se ordenaron de mayor a menor:");
-        Brand respuesta1 = controller.binarySetachByValidYeras(car, 4, false);
-        if (respuesta1 !=null){
-                System.out.println( "Encontrada: Marca: " + respuesta1.getBrandName() + ", ToTal de años validos: " + respuesta1.getTotalVaildYears());
+        Brand resultado2 = controller.binarySetachByValidYeras(car, 4, false);
+        if (resultado2 !=null){
+                System.out.println( "Encontrada: Marca: " + resultado2.getBrandName() + ", ToTal de años validos: " + resultado2.getTotalVaildYears());
         }else{
                 System.out.println("No encontrada");
         }
